@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Instagram Caption & Hashtag Generator</title>
-  <meta name="description" content="Generate human-like Instagram captions and trending hashtags instantly.">
+  <meta charset="UTF-8">
+  <title>Instagram Caption & Hashtag Generator | Social Viral Tools</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Generate human-like Instagram captions and trending hashtags for reels and posts. Free caption and hashtag generator tool.">
+  <meta name="keywords" content="instagram caption generator, hashtag generator, viral captions, reels hashtags">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 
-<div class="hero">
+<header class="hero">
   <h1>Instagram Caption Generator</h1>
-  <p>Generate captions + hashtags in one click</p>
-</div>
+  <p>Create viral captions & hashtags in one click</p>
+</header>
 
-<div class="container">
+<main class="container">
+
   <div class="card">
-    <label>Write your idea / topic</label>
-    <textarea id="topicInput" placeholder="e.g. gym, bollywood, travel"></textarea>
 
-    <button class="primary" onclick="generateCaptionAndHashtags()">
+    <label for="topicInput">Write your idea / topic</label>
+    <textarea id="topicInput" placeholder="e.g. bollywood, gym, travel"></textarea>
+
+    <button id="generateBtn" class="primary-btn">
       Generate Caption + Hashtags
     </button>
 
     <label>Caption</label>
-    <textarea id="captionOutput"></textarea>
-    <button class="secondary" onclick="copyText('captionOutput')">Copy Caption</button>
+    <textarea id="captionOutput" placeholder="Caption will appear here..."></textarea>
+
+    <button class="dark-btn" onclick="copyText('captionOutput')">
+      Copy Caption
+    </button>
 
     <label>Hashtags</label>
-    <textarea id="hashtagOutput"></textarea>
-    <button class="secondary" onclick="copyText('hashtagOutput')">Copy Hashtags</button>
+    <textarea id="hashtagOutput" placeholder="Hashtags will appear here..."></textarea>
+
+    <button class="dark-btn" onclick="copyText('hashtagOutput')">
+      Copy Hashtags
+    </button>
+
   </div>
-</div>
 
-<footer>© Social Viral Tools</footer>
+</main>
 
-<script src="/js/app.js"></script>
+<footer>
+  <p>© 2025 Social Viral Tools</p>
+</footer>
+
+<!-- JS MUST BE LAST -->
+<script src="/js/caption.js"></script>
+
 </body>
 </html>
