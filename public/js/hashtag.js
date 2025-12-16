@@ -1,18 +1,23 @@
 let hashtagsData = {};
 
 fetch('/data/hashtags.json')
-  .then(res => res.json())
-  .then(data => hashtagsData = data);
+  .then(r => r.json())
+  .then(d => hashtagsData = d);
 
-function generateHashtags() {
+document.getElementById("hashtagBtn").addEventListener("click", () => {
   const topic = document.getElementById("topicInput").value.trim().toLowerCase();
 
-  if (!hashtagsData[topic]) {
+  if (hashtagsData[topic]) {
+    document.getElementById("hashtagOutput").value =
+      hashtagsData[topic].join(" ");
+  } else {
     document.getElementById("hashtagOutput").value =
       "#viral #reels #instagram";
-    return;
   }
+});
 
-  document.getElementById("hashtagOutput").value =
-    hashtagsData[topic].join(" ");
+function copyText(id) {
+  const el = document.getElementById(id);
+  el.select();
+  document.execCommand("copy");
 }
