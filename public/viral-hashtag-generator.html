@@ -2,52 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Hashtag Generator | Social Viral Tools</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Generate trending Instagram hashtags for reels and posts. Free viral hashtag generator.">
-  <meta name="keywords" content="instagram hashtag generator, viral hashtags, reels hashtags">
+  <title>Instagram Hashtag Generator – Social Viral Tools</title>
+  <meta name="description" content="Generate trending Instagram hashtags for reels and posts to increase reach and engagement.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-<header class="hero">
-  <h1>Instagram Hashtag Generator</h1>
-  <p>Trending hashtags for maximum reach</p>
-</header>
+<main class="tool-page">
+  <div class="tool-box">
 
-<main class="container">
+    <h1>Instagram Hashtag Generator</h1>
+    <p>Generate trending hashtags for maximum reach on Instagram.</p>
 
-  <div class="card">
-
-    <label for="topicInput">Write your topic</label>
-    <input id="topicInput" type="text" placeholder="gym, travel, bollywood">
+    <div class="form-group">
+      <label for="topicInput">Write your topic</label>
+      <input
+        id="topicInput"
+        type="text"
+        placeholder="gym, travel, bollywood"
+      >
+    </div>
 
     <button id="hashtagBtn" class="primary-btn">
       Generate Hashtags
     </button>
 
-    <label>Hashtags</label>
-    <textarea id="hashtagOutput" placeholder="Hashtags will appear here..."></textarea>
+    <div class="form-group">
+      <label for="hashtagOutput">Hashtags</label>
+      <textarea
+        id="hashtagOutput"
+        class="output-area"
+        placeholder="Hashtags will appear here..."
+      ></textarea>
+    </div>
 
-    <button class="dark-btn" onclick="copyText('hashtagOutput')">
+    <button class="secondary-btn" onclick="copyText('hashtagOutput')">
       Copy Hashtags
     </button>
 
   </div>
-
 </main>
 
-<footer>
-  <p>© 2025 Social Viral Tools</p>
-</footer>
-
-<!-- JS MUST BE LAST -->
 <script src="/js/hashtag.js"></script>
-
 </body>
 </html>
