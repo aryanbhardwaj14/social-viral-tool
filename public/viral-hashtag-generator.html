@@ -2,50 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Hashtag Generator – Social Viral Tools</title>
-  <meta name="description" content="Generate trending Instagram hashtags for reels and posts to increase reach and engagement.">
+
+  <title>Instagram Hashtag Generator – Trending Hashtags for Reels & Posts</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Free Instagram Hashtag Generator. Find trending hashtags to boost reach and engagement on Instagram reels and posts.">
+  <meta name="keywords" content="instagram hashtag generator, trending hashtags, reels hashtags, viral hashtags">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-<main class="tool-page">
-  <div class="tool-box">
+<header class="hero">
+  <h1>Instagram Hashtag Generator</h1>
+  <p>Generate trending hashtags to boost reach on Instagram reels & posts</p>
+</header>
 
-    <h1>Instagram Hashtag Generator</h1>
-    <p>Generate trending hashtags for maximum reach on Instagram.</p>
+<main class="container">
 
-    <div class="form-group">
-      <label for="topicInput">Write your topic</label>
-      <input
-        id="topicInput"
-        type="text"
-        placeholder="gym, travel, bollywood"
-      >
-    </div>
+  <section class="card">
 
-    <button id="hashtagBtn" class="primary-btn">
+    <label for="topicInput">Write your topic</label>
+    <input
+      type="text"
+      id="topicInput"
+      placeholder="e.g. gym, travel, bollywood"
+      aria-label="Enter topic for hashtag generation"
+    />
+
+    <button
+      id="hashtagBtn"
+      class="primary-btn"
+      aria-label="Generate Instagram hashtags"
+    >
       Generate Hashtags
     </button>
 
-    <div class="form-group">
-      <label for="hashtagOutput">Hashtags</label>
-      <textarea
-        id="hashtagOutput"
-        class="output-area"
-        placeholder="Hashtags will appear here..."
-      ></textarea>
-    </div>
+    <label for="hashtagOutput">Hashtags</label>
+    <textarea
+      id="hashtagOutput"
+      placeholder="Trending hashtags will appear here..."
+      readonly
+    ></textarea>
 
-    <button class="secondary-btn" onclick="copyText('hashtagOutput')">
+    <button
+      class="dark-btn"
+      onclick="copyText('hashtagOutput')"
+      aria-label="Copy hashtags"
+    >
       Copy Hashtags
     </button>
 
-  </div>
+  </section>
+
 </main>
 
+<footer>
+  <p>© 2025 Social Viral Tools · Free Instagram Growth Tools</p>
+</footer>
+
+<!-- JS MUST BE LAST -->
 <script src="/js/hashtag.js"></script>
+
 </body>
 </html>
