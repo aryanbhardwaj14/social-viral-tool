@@ -1,88 +1,89 @@
-/* ===== Base ===== */
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  background: #f4f7fb;
-  color: #111;
-}
+/* ===== Tool Page Layout ===== */
 
-.hero {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero h1 {
-  margin: 0;
-  font-size: 36px;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 18px;
-  opacity: 0.9;
-}
-
-.container {
-  max-width: 1100px;
+.tool-page {
+  max-width: 900px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* ===== Tool Cards ===== */
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.tool-card {
-  background: #fff;
-  border-radius: 16px;
+.tool-box {
+  background: #ffffff;
   padding: 30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
 }
 
-.tool-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-}
-
-.tool-card h2 {
+.tool-box h1 {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 28px;
 }
 
-.tool-card p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #444;
+.tool-box p {
+  color: #555;
+  margin-bottom: 25px;
 }
 
-/* ===== Buttons ===== */
-.primary-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
-  background: #2563eb;
-  color: #fff;
-  text-decoration: none;
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
   font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group textarea,
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
   border-radius: 10px;
-  transition: background 0.2s ease, transform 0.2s ease;
+  border: 1px solid #d0d7e2;
+  resize: vertical;
+}
+
+.form-group textarea:focus,
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
 }
 
 .primary-btn:hover {
-  background: #1e40af;
-  transform: translateY(-2px);
+  opacity: 0.95;
 }
 
-/* ===== Footer ===== */
-footer {
-  text-align: center;
-  padding: 30px 10px;
-  color: #555;
-  font-size: 14px;
+.secondary-btn {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.output-area {
+  min-height: 120px;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+  .tool-box {
+    padding: 20px;
+  }
 }
