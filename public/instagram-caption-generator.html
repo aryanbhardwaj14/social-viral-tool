@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Instagram Caption & Hashtag Generator</title>
+  <meta name="description" content="Generate human-like Instagram captions and trending hashtags instantly.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>Instagram Caption Generator</h1>
+  <p>Generate captions + hashtags in one click</p>
+</div>
+
+<div class="container">
+  <div class="card">
+    <label>Write your idea / topic</label>
+    <textarea id="topicInput" placeholder="e.g. gym, bollywood, travel"></textarea>
+
+    <button class="primary" onclick="generateCaptionAndHashtags()">
+      Generate Caption + Hashtags
+    </button>
+
+    <label>Caption</label>
+    <textarea id="captionOutput"></textarea>
+    <button class="secondary" onclick="copyText('captionOutput')">Copy Caption</button>
+
+    <label>Hashtags</label>
+    <textarea id="hashtagOutput"></textarea>
+    <button class="secondary" onclick="copyText('hashtagOutput')">Copy Hashtags</button>
+  </div>
+</div>
+
+<footer>© Social Viral Tools</footer>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
