@@ -203,3 +203,21 @@ footer {
 .secondary-btn:hover {
   opacity: 0.9;
 }
+/* Tool card CTA buttons */
+.tool-card a {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #2563eb;
+  background: #eaf0ff;
+  transition: all 0.2s ease;
+}
+
+.tool-card a:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
