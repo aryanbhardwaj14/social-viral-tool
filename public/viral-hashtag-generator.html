@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Instagram Hashtag Generator</title>
+  <meta name="description" content="Generate trending Instagram hashtags for reels and posts.">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="hero">
+  <h1>Instagram Hashtag Generator</h1>
+  <p>Trending hashtags for better reach</p>
+</div>
+
+<div class="container">
+  <div class="card">
+    <label>Write your topic</label>
+    <input id="topicInput" placeholder="gym, travel, bollywood">
+
+    <button class="primary" onclick="generateCaptionAndHashtags()">
+      Generate Hashtags
+    </button>
+
+    <textarea id="hashtagOutput"></textarea>
+    <button class="secondary" onclick="copyText('hashtagOutput')">Copy Hashtags</button>
+  </div>
+</div>
+
+<footer>© Social Viral Tools</footer>
+<script src="/js/app.js"></script>
+</body>
+</html>
