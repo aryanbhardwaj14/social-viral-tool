@@ -254,3 +254,45 @@ footer {
 .nav-links a:hover {
   color: #2563eb;
 }
+.hero {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 26px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  margin: 8px;
+}
+
+.primary-btn {
+  background: white;
+  color: #2563eb;
+}
+
+.secondary-btn {
+  border: 2px solid white;
+  color: white;
+}
