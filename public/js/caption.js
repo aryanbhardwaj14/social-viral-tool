@@ -1,45 +1,43 @@
 let captionsData = {};
 let hashtagsData = {};
 
-// load JSON once
 Promise.all([
-  fetch('/data/captions.json').then(res => res.json()),
-  fetch('/data/hashtags.json').then(res => res.json())
-]).then(([captions, hashtags]) => {
-  captionsData = captions;
-  hashtagsData = hashtags;
-}).catch(err => {
-  alert("Failed to load data files");
-  console.error(err);
+  fetch('/data/captions.json').then(r => r.json()),
+  fetch('/data/hashtags.json').then(r => r.json())
+]).then(([c, h]) => {
+  captionsData = c;
+  hashtagsData = h;
+}).catch(() => {
+  alert("Data load failed");
 });
 
-function generateCaptionAndHashtags() {
+document.getElementById("generateBtn").addEventListener("click", () => {
   const topic = document.getElementById("topicInput").value.trim().toLowerCase();
 
   if (!topic) {
-    alert("Please enter a topic");
+    alert("Enter a topic");
     return;
   }
 
   // CAPTION
-  if (!captionsData[topic]) {
-    document.getElementById("captionOutput").value =
-      "No caption found for this topic yet.";
-  } else {
+  if (captionsData[topic]) {
     const list = captionsData[topic];
-    const randomCaption = list[Math.floor(Math.random() * list.length)];
-    document.getElementById("captionOutput").value = randomCaption;
+    document.getElementById("captionOutput").value =
+      list[Math.floor(Math.random() * list.length)];
+  } else {
+    document.getElementById("captionOutput").value =
+      "Fresh vibes, real energy ✨";
   }
 
   // HASHTAGS
-  if (!hashtagsData[topic]) {
-    document.getElementById("hashtagOutput").value =
-      "#trending #viral #reels";
-  } else {
+  if (hashtagsData[topic]) {
     document.getElementById("hashtagOutput").value =
       hashtagsData[topic].join(" ");
+  } else {
+    document.getElementById("hashtagOutput").value =
+      "#viral #reels #instagram";
   }
-}
+});
 
 function copyText(id) {
   const el = document.getElementById(id);
