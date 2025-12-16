@@ -1,0 +1,18 @@
+{
+  "gym": [
+    "#gymlife", "#fitnessmotivation", "#workoutdaily",
+    "#fitindia", "#healthylifestyle"
+  ],
+  "bollywood": [
+    "#bollywood", "#indiancinema", "#filmlover",
+    "#celebritylife", "#filmmaking"
+  ],
+  "travel": [
+    "#travelgram", "#wanderlust", "#exploreindia",
+    "#traveldiaries", "#adventurelife"
+  ],
+  "default": [
+    "#trending", "#viralpost", "#reels",
+    "#contentcreator", "#socialmedia"
+  ]
+}
