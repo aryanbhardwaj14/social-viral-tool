@@ -1,156 +1,132 @@
-/* ===== Tool Page Layout ===== */
-
-.tool-page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 20px;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
 }
 
-.tool-box {
-  background: #ffffff;
-  padding: 30px;
+body {
+  background: #f4f7fb;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+/* CARD */
+.card {
+  background: #fff;
   border-radius: 16px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
 }
 
-.tool-box h1 {
-  margin-top: 0;
-  font-size: 28px;
+/* GRID (HOME PAGE) */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.tool-box p {
-  color: #555;
-  margin-bottom: 25px;
+/* TOOL CARD */
+.tool-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
 }
 
-.form-group {
-  margin-bottom: 22px;
+.tool-card p {
+  color: #475569;
+  margin-bottom: 20px;
 }
 
-.form-group label {
+/* INPUTS */
+label {
   display: block;
+  margin: 14px 0 6px;
   font-weight: 600;
-  margin-bottom: 8px;
 }
 
-.form-group textarea,
-.form-group input {
+input,
+textarea {
   width: 100%;
   padding: 14px;
-  font-size: 15px;
   border-radius: 10px;
-  border: 1px solid #d0d7e2;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 130px;
   resize: vertical;
 }
 
-.form-group textarea:focus,
-.form-group input:focus {
-  outline: none;
-  border-color: #2563eb;
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-top: 16px;
 }
 
 .primary-btn {
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
   background: linear-gradient(135deg, #2563eb, #1e40af);
   color: white;
 }
 
 .primary-btn:hover {
-  opacity: 0.95;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37,99,235,0.35);
 }
 
-.secondary-btn {
-  width: 100%;
-  padding: 13px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 10px;
-  border: none;
-  background: #111827;
+.dark-btn {
+  background: #0f172a;
   color: white;
-  cursor: pointer;
 }
 
-.output-area {
-  min-height: 120px;
+.dark-btn:hover {
+  background: #020617;
 }
 
-/* Mobile spacing */
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+/* MOBILE */
 @media (max-width: 600px) {
-  .tool-box {
-    padding: 20px;
+  .hero h1 {
+    font-size: 1.8rem;
   }
-}
-/* ===== TOOL UI FIX (NON-BREAKING) ===== */
-
-body {
-  background: #f4f7fb;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-}
-
-main, .container {
-  display: flex;
-  justify-content: center;
-  padding: 40px 16px;
-}
-
-.card {
-  background: #ffffff;
-  width: 100%;
-  max-width: 600px;
-  padding: 28px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-label {
-  font-weight: 600;
-  margin-bottom: 6px;
-  display: block;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  border: 1px solid #d0d7e2;
-  font-size: 15px;
-}
-
-textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-button {
-  width: 100%;
-  padding: 14px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  margin-bottom: 12px;
-}
-
-.primary-btn {
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: white;
-  border: none;
-}
-
-button:not(.primary-btn) {
-  background: #111827;
-  color: white;
-  border: none;
-}
-
-button:hover {
-  opacity: 0.95;
 }
