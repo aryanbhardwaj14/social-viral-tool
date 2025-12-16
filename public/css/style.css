@@ -315,3 +315,9 @@ footer {
   font-size: 14px;
   color: #6b7280;
 }
+.adsense-box {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
