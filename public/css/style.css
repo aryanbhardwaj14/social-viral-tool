@@ -296,3 +296,22 @@ footer {
   border: 2px solid white;
   color: white;
 }
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1000px;
+  margin: 60px auto;
+  gap: 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.feature h3 {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #6b7280;
+}
