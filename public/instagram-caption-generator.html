@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Caption & Hashtag Generator | Social Viral Tools</title>
+
+  <title>Instagram Caption Generator – Create Viral Captions & Hashtags</title>
 
   <!-- SEO -->
-  <meta name="description" content="Generate human-like Instagram captions and trending hashtags for reels and posts. Free caption and hashtag generator tool.">
-  <meta name="keywords" content="instagram caption generator, hashtag generator, viral captions, reels hashtags">
+  <meta name="description" content="Free Instagram Caption Generator. Create human-like viral captions and trending hashtags for Instagram reels and posts in one click.">
+  <meta name="keywords" content="instagram caption generator, viral captions, instagram hashtag generator, reels captions">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
@@ -17,40 +18,64 @@
 
 <header class="hero">
   <h1>Instagram Caption Generator</h1>
-  <p>Create viral captions & hashtags in one click</p>
+  <p>Create viral, human-like captions and hashtags for Instagram reels & posts</p>
 </header>
 
 <main class="container">
 
-  <div class="card">
+  <section class="card">
 
-    <label for="topicInput">Write your idea / topic</label>
-    <textarea id="topicInput" placeholder="e.g. bollywood, gym, travel"></textarea>
+    <label for="topicInput">Write your idea or topic</label>
+    <textarea
+      id="topicInput"
+      placeholder="e.g. bollywood, gym motivation, travel reels"
+      aria-label="Enter topic for caption generation"
+    ></textarea>
 
-    <button id="generateBtn" class="primary-btn">
+    <button
+      id="generateBtn"
+      class="primary-btn"
+      aria-label="Generate Instagram caption and hashtags"
+    >
       Generate Caption + Hashtags
     </button>
 
-    <label>Caption</label>
-    <textarea id="captionOutput" placeholder="Caption will appear here..."></textarea>
+    <label for="captionOutput">Caption</label>
+    <textarea
+      id="captionOutput"
+      placeholder="Your Instagram caption will appear here..."
+      readonly
+    ></textarea>
 
-    <button class="dark-btn" onclick="copyText('captionOutput')">
+    <button
+      class="dark-btn"
+      onclick="copyText('captionOutput')"
+      aria-label="Copy caption"
+    >
       Copy Caption
     </button>
 
-    <label>Hashtags</label>
-    <textarea id="hashtagOutput" placeholder="Hashtags will appear here..."></textarea>
+    <label for="hashtagOutput">Hashtags</label>
+    <textarea
+      id="hashtagOutput"
+      placeholder="Trending hashtags will appear here..."
+      readonly
+    ></textarea>
 
-    <button class="dark-btn" onclick="copyText('hashtagOutput')">
+    <button
+      class="dark-btn"
+      onclick="copyText('hashtagOutput')"
+      aria-label="Copy hashtags"
+    >
       Copy Hashtags
     </button>
 
-  </div>
+  </section>
 
 </main>
 
 <footer>
-  <p>© 2025 Social Viral Tools</p>
+  <p>© 2025 Social Viral Tools · Free Instagram Growth Tools</p>
 </footer>
 
 <!-- JS MUST BE LAST -->
