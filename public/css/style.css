@@ -155,3 +155,51 @@ footer {
   color: #2563eb;
   text-decoration: none;
 }
+/* ===== TOOL PAGE FIX ===== */
+
+.tool-page .card {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 30px;
+}
+
+.tool-page label {
+  display: block;
+  font-weight: 600;
+  margin: 16px 0 6px;
+}
+
+.tool-page textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.tool-page button {
+  width: 100%;
+  margin-top: 14px;
+}
+.hero-buttons a {
+  text-decoration: none;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background: rgba(255,255,255,0.15);
+}
