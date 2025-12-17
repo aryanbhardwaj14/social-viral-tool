@@ -25,8 +25,20 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     document.getElementById("captionOutput").value =
       list[Math.floor(Math.random() * list.length)];
   } else {
+    const aiToggle = document.getElementById("aiToggle");
+
+  if (aiToggle && aiToggle.checked) {
+      generateAICaption(topic).then(text => {
+      document.getElementById("captionOutput").value = text;
+    }).catch(() => {
+      document.getElementById("captionOutput").value =
+        "Fresh vibes, real energy ✨";
+    });
+  } else {
     document.getElementById("captionOutput").value =
       "Fresh vibes, real energy ✨";
+  }
+}
   }
 
   // HASHTAGS
@@ -43,4 +55,16 @@ function copyText(id) {
   const el = document.getElementById(id);
   el.select();
   document.execCommand("copy");
+}
+async function generateAICaption(topic) {
+  // Temporary smart fallback (AI-like)
+  const templates = [
+    `Moments that make ${topic} feel real ✨`,
+    `${topic} vibes that hit different 🔥`,
+    `This is what ${topic} energy looks like 💯`,
+    `When ${topic} becomes the mood 🎶`,
+    `Keeping it real with ${topic} moments 🌙`
+  ];
+
+  return templates[Math.floor(Math.random() * templates.length)];
 }
