@@ -25,21 +25,10 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     document.getElementById("captionOutput").value =
       list[Math.floor(Math.random() * list.length)];
   } else {
-    const aiToggle = document.getElementById("aiToggle");
-
-  if (aiToggle && aiToggle.checked) {
-      generateAICaption(topic).then(text => {
-      document.getElementById("captionOutput").value = text;
-    }).catch(() => {
-      document.getElementById("captionOutput").value =
-        "Fresh vibes, real energy ✨";
-    });
-  } else {
     document.getElementById("captionOutput").value =
       "Fresh vibes, real energy ✨";
   }
 }
-  }
 
   // HASHTAGS
   if (hashtagsData[topic]) {
