@@ -19,9 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("JSON loaded successfully");
   })
   .catch(err => {
-    console.error(err);
-    alert("Data load failed");
-  });
+  console.warn("JSON load warning:", err);
+});
 
   document.getElementById("generateBtn").addEventListener("click", () => {
     const topic = document
