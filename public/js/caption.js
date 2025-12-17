@@ -28,7 +28,6 @@ document.getElementById("generateBtn").addEventListener("click", () => {
     document.getElementById("captionOutput").value =
       "Fresh vibes, real energy ✨";
   }
-}
 
   // HASHTAGS
   if (hashtagsData[topic]) {
