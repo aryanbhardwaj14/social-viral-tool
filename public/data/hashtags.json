@@ -1,18 +1,118 @@
 {
+  "general": [
+    "#trending", "#viral", "#explore", "#explorepage", "#instagood",
+    "#reels", "#reelitfeelit", "#contentcreator", "#dailycontent",
+    "#socialmedia", "#onlinegrowth", "#digitalworld", "#creatorlife",
+    "#instadaily", "#inspiration", "#creative", "#popular", "#foryou",
+    "#reelsinstagram", "#discover", "#instatrend", "#viralcontent", "#trendingnow", "#contentideas",
+"#reelsdaily", "#reelsvideo", "#reelscreator", "#instareels",
+"#instareel", "#reelsworld", "#reelsofinstagram",
+"#exploreindia", "#instacommunity", "#socialgrowth",
+"#digitalcreator", "#creatorcommunity", "#onlinecreator",
+"#dailyreels", "#viralreels", "#reelsviral",
+"#trendingreels", "#instaviral", "#reelslife",
+"#contentdaily", "#socialmediaindia", "#growthtips",
+"#instatips", "#creatorsupport", "#influencerlife",
+"#influencermarketing", "#creatorstudio",
+"#instacontent", "#contentmarketing",
+"#postideas", "#creativecontent",
+"#reelsstrategy", "#instagramgrowth",
+"#organicgrowth", "#reachmore",
+"#audiencegrowth", "#contentplanning",
+"#socialtools", "#viraltools",
+"#explorecontent", "#reelcontent",
+"#instaengagement", "#boostengagement",
+"#onlinepresence", "#digitalpresence",
+"#creatorjourney", "#contentjourney",
+"#trendingpage", "#reelsnation",
+"#viralpage", "#instaexplore",
+"#discoverpage", "#forupage",
+"#instagramtips", "#reelsideas"
+
+  ],
+
   "gym": [
-    "#gymlife", "#fitnessmotivation", "#workoutdaily",
-    "#fitindia", "#healthylifestyle"
+    "#gymlife", "#fitnessjourney", "#workoutmotivation", "#fitindia",
+    "#gymreels", "#strengthtraining", "#bodygoals", "#fitfam",
+    "#healthylifestyle", "#musclebuilding", "#trainhard",
+    "#fitnessdaily", "#fitmind", "#gymmotivation", "#workoutlife",
+    "#fitnessaddict", "#fitgoals", "#exercise", "#fitbody", "#stayfit"
   ],
-  "bollywood": [
-    "#bollywood", "#indiancinema", "#filmlover",
-    "#celebritylife", "#filmmaking"
-  ],
+
   "travel": [
-    "#travelgram", "#wanderlust", "#exploreindia",
-    "#traveldiaries", "#adventurelife"
+    "#travelgram", "#wanderlust", "#travelindia", "#exploremore",
+    "#travelreels", "#adventuretime", "#tripdiaries", "#vacationmode",
+    "#beautifuldestinations", "#naturelovers", "#travelphotography",
+    "#traveladdict", "#roamtheplanet", "#exploring", "#journey",
+    "#holidayvibes", "#travelblogger", "#worldexplorer",
+    "#wanderer", "#travelgoals"
   ],
-  "default": [
-    "#trending", "#viralpost", "#reels",
-    "#contentcreator", "#socialmedia"
+
+  "bollywood": [
+    "#bollywood", "#bollywoodreels", "#indiancinema", "#filmy",
+    "#celebritylife", "#moviebuzz", "#bollywoodsongs",
+    "#desivibes", "#filmindustry", "#actorslife",
+    "#bollywoodstyle", "#cinemalovers", "#filmmaking",
+    "#hindicinema", "#entertainment", "#movieupdates",
+    "#desicinema", "#bollywoodfans", "#filmlover", "#indiansongs"
+  ],
+
+  "motivation": [
+    "#motivation", "#inspiration", "#successmindset", "#selfgrowth",
+    "#positivevibes", "#mindsetmatters", "#goals", "#dreambig",
+    "#stayfocused", "#nevergiveup", "#consistency",
+    "#hardwork", "#discipline", "#selfbelief",
+    "#personaldevelopment", "#growthmindset",
+    "#motivationalquotes", "#keepgoing", "#focus", "#success"
+  ],
+
+  "love": [
+    "#love", "#couplegoals", "#relationshipgoals", "#romantic",
+    "#together", "#lovevibes", "#feelings", "#heartfelt",
+    "#trueconnection", "#lovestory", "#affection",
+    "#emotions", "#bond", "#togetherforever",
+    "#care", "#sweetmoments", "#lovequotes",
+    "#relationship", "#connection", "#romance"
+  ],
+
+  "fashion": [
+    "#fashion", "#styleinspo", "#ootd", "#fashionreels",
+    "#stylegoals", "#outfitideas", "#trendy",
+    "#fashionlover", "#streetstyle", "#styleinspiration",
+    "#confidence", "#wearit", "#fashiondaily",
+    "#stylish", "#lookbook", "#fashiongram",
+    "#clothingstyle", "#stylelife", "#fashionvibes", "#dressup"
+  ],
+
+  "food": [
+    "#foodie", "#foodlover", "#foodreels", "#foodphotography",
+    "#homemade", "#delicious", "#foodgram",
+    "#comfortfood", "#tasty", "#foodstagram",
+    "#foodblogger", "#yummy", "#foodideas",
+    "#indianfood", "#foodvibes", "#meal",
+    "#eating", "#foodlife", "#foodlove", "#foodpics"
+  ],
+
+  "business": [
+    "#business", "#entrepreneur", "#startup",
+    "#businessgrowth", "#digitalbusiness",
+    "#hustle", "#worksmart", "#branding",
+    "#marketing", "#successhabits",
+    "#businessmindset", "#onlinebusiness",
+    "#strategy", "#growth", "#leadership",
+    "#smallbusiness", "#founderlife",
+    "#businessowner", "#professional", "#careers"
+  ],
+
+  "nature": [
+    "#nature", "#naturelovers", "#greenery",
+    "#peaceful", "#outdoorvibes",
+    "#earthfocus", "#naturalbeauty",
+    "#calm", "#freshair",
+    "#naturephotography", "#forest",
+    "#mountains", "#sky", "#sunlight",
+    "#landscape", "#naturetherapy",
+    "#serenity", "#mothernature",
+    "#earthlove", "#naturegram"
   ]
 }
