@@ -45,15 +45,3 @@ function copyText(id) {
   el.select();
   document.execCommand("copy");
 }
-async function generateAICaption(topic) {
-  // Temporary smart fallback (AI-like)
-  const templates = [
-    `Moments that make ${topic} feel real ✨`,
-    `${topic} vibes that hit different 🔥`,
-    `This is what ${topic} energy looks like 💯`,
-    `When ${topic} becomes the mood 🎶`,
-    `Keeping it real with ${topic} moments 🌙`
-  ];
-
-  return templates[Math.floor(Math.random() * templates.length)];
-}
