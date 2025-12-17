@@ -1,42 +1,59 @@
 let captionsData = {};
 let hashtagsData = {};
 
-Promise.all([
-  fetch('/data/captions.json').then(r => r.json()),
-  fetch('/data/hashtags.json').then(r => r.json())
-]).then(([c, h]) => {
-  captionsData = c;
-  hashtagsData = h;
-}).catch(() => {
-  alert("Data load failed");
-});
+document.addEventListener("DOMContentLoaded", () => {
 
-document.getElementById("generateBtn").addEventListener("click", () => {
-  const topic = document.getElementById("topicInput").value.trim().toLowerCase();
+  Promise.all([
+    fetch("data/captions.json").then(r => {
+      if (!r.ok) throw new Error("Captions JSON not found");
+      return r.json();
+    }),
+    fetch("data/hashtags.json").then(r => {
+      if (!r.ok) throw new Error("Hashtags JSON not found");
+      return r.json();
+    })
+  ])
+  .then(([c, h]) => {
+    captionsData = c;
+    hashtagsData = h;
+    console.log("JSON loaded successfully");
+  })
+  .catch(err => {
+    console.error(err);
+    alert("Data load failed");
+  });
 
-  if (!topic) {
-    alert("Enter a topic");
-    return;
-  }
+  document.getElementById("generateBtn").addEventListener("click", () => {
+    const topic = document
+      .getElementById("topicInput")
+      .value.trim()
+      .toLowerCase();
 
-  // CAPTION
-  if (captionsData[topic]) {
-    const list = captionsData[topic];
-    document.getElementById("captionOutput").value =
-      list[Math.floor(Math.random() * list.length)];
-  } else {
-    document.getElementById("captionOutput").value =
-      "Fresh vibes, real energy ✨";
-  }
+    if (!topic) {
+      alert("Enter a topic");
+      return;
+    }
 
-  // HASHTAGS
-  if (hashtagsData[topic]) {
-    document.getElementById("hashtagOutput").value =
-      hashtagsData[topic].join(" ");
-  } else {
-    document.getElementById("hashtagOutput").value =
-      "#viral #reels #instagram";
-  }
+    // CAPTION
+    if (captionsData[topic]) {
+      const list = captionsData[topic];
+      document.getElementById("captionOutput").value =
+        list[Math.floor(Math.random() * list.length)];
+    } else {
+      document.getElementById("captionOutput").value =
+        "Fresh vibes, real energy ✨";
+    }
+
+    // HASHTAGS
+    if (hashtagsData[topic]) {
+      document.getElementById("hashtagOutput").value =
+        hashtagsData[topic].join(" ");
+    } else {
+      document.getElementById("hashtagOutput").value =
+        "#viral #reels #instagram";
+    }
+  });
+
 });
 
 function copyText(id) {
